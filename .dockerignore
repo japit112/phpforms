@@ -1,0 +1,25 @@
+# VCS
+.git
+.gitignore
+
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editors/OS
+.vscode
+.idea
+*.swp
+*.swo
+*.DS_Store
+
+# Docker artifacts
+Dockerfile*
+.dockerignore
+
+# Local files
+*.log
+*.env
+*.local
