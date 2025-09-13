@@ -1,9 +1,9 @@
 <?php
 // Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "japit_db";
+$servername = getenv('DB_HOST') ?: 'localhost';
+$username   = getenv('DB_USER') ?: 'root';
+$password   = getenv('DB_PASSWORD') ?: '';
+$dbname     = getenv('DB_NAME') ?: 'japit_db';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
